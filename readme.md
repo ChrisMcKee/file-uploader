@@ -1,10 +1,14 @@
 [donation_link]: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=3PMY37SL9L888&lc=US&item_name=JavaScript%20file%20uploader&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted
 
+--
+
+Added in extra code & changes required to make this work on <PHP5.2  (JSON Encode doesnt exist before 5.2, filepath doesnt work before 5.2)
+
+--
+
 This plugin uses XHR for uploading multiple files with progress-bar in FF3.6+, Safari4+,
 Chrome and falls back to hidden iframe based upload in other browsers,
 providing good user experience everywhere.
-
-### <a href="http://valums.com/files/2010/file-uploader/demo.htm">Demo</a> [Donate][donation_link] ###
 
 ### Features ###
 * multiple file select, progress-bar in FF, Chrome, Safari
@@ -19,8 +23,6 @@ providing good user experience everywhere.
 ### License ###
 This plugin is open sourced under <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU GPL 2</a> or later and <a href="http://www.gnu.org/licenses/lgpl-2.1.html">GNU LGPL 2</a> or later.
 If this license doesn't suit you mail me at andrew (at) valums.com.
-
-Please [donate][donation_link] if you are willing to support the further development of file upload plugin.  
 
 ### Known Issues ###
 Plugin breaks back button functionality in Opera.
@@ -150,3 +152,7 @@ Patrick Pfeiffer
 Sean Sandy (SeanJA)  
 Andy Newby     
 Ivan Valles  
+
+
+
+Please [donate][donation_link] if you are willing to support the further development of file upload plugin.  
